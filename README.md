@@ -1,8 +1,18 @@
 # node.js AVA Testing
 
+AVA is a node.js test runner
+
+Started in November 2014
+
 ### Set up
 
     npm install ava -g
+
+    Or
+
+    npm install --save-dev ava
+
+    
 
 To run the command _ava_ is all that is needed.
 
@@ -22,3 +32,24 @@ To run the command _ava_ is all that is needed.
 12. Enhanced Asserts
 13. Optional TAP output
 14. Clean stack traces
+
+
+#### Three inputs to testing React components
+
+    Props
+    User
+    Data
+
+
+#### AVA only has 8 test assertions
+
+
+    *Assertion        Negative Assertion*
+    pass()            fail()
+    truthy()          falsy()
+    true()            false()
+    is()              not()
+    deepEqual()       notDeepEqual()
+    throws()          notThrows()
+    regex()           notRegex()
+    snapshot()
