@@ -60,12 +60,13 @@ modify the test script in package.json to run AVA:
       "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "ava",
+        "test": "cross-env NODE_ENV=test ava",
         "eject": "react-scripts eject"
       },
       "devDependencies": {
         "ava": "^0.24.0",
         "babel-preset-react-app": "^3.1.1",
+        "cross-env": "^3.0.0"
         "react-scripts": "1.1.0"
       },
       "babel": {
