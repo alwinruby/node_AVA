@@ -80,3 +80,11 @@ modify the test script in package.json to run AVA:
 babel-preset-react-app requires us to set NODE_ENV before running tests, which lets React know in which environment it's running.
 
     npm install --save-dev cross-env
+
+AVA only parses test files, not imported modules, i.e. our application code. To fix that, we should require babel-register before running tests. To install it, run:
+
+    npm install --save-dev babel-register
+
+Node.js can't import CSS files, so we need a way to ignore those imports. They aren't needed in our tests anyway.
+
+    npm install --save-dev ignore-styles
