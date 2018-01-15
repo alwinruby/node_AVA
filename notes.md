@@ -46,4 +46,32 @@ modify the test script in package.json to run AVA:
 
     npm install --save-dev babel-preset-react-app
 
-    
+
+    Amend json again
+
+    {
+      "name": "todo-app",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
+      },
+      "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "ava",
+        "eject": "react-scripts eject"
+      },
+      "devDependencies": {
+        "ava": "^0.24.0",
+        "babel-preset-react-app": "^3.1.1",
+        "react-scripts": "1.1.0"
+      },
+      "babel": {
+        "presents": "react-app"
+      },
+      "ava": {
+        "babel": "inherit"
+      }
+    }
