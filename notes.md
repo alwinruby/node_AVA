@@ -75,3 +75,7 @@ modify the test script in package.json to run AVA:
         "babel": "inherit"
       }
     }
+
+babel-preset-react-app requires us to set NODE_ENV before running tests, which lets React know in which environment it's running.
+
+    npm install --save-dev cross-env
