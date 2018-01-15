@@ -88,3 +88,5 @@ AVA only parses test files, not imported modules, i.e. our application code. To 
 Node.js can't import CSS files, so we need a way to ignore those imports. They aren't needed in our tests anyway.
 
     npm install --save-dev ignore-styles
+
+    npm install --save-dev jsdom
